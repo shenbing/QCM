@@ -5,15 +5,17 @@
 @time: 2018/6/8 14:30
 """
 
-from . import home
+from app.home import home
 from flask import render_template,abort
 from flask.views import MethodView,View
-from .form import LoginFrom
+from flask_login import current_user
+from flask import redirect,url_for
+from flask_login import login_required
 
-class LoginView(MethodView):
+class IndexView(MethodView):
+    # @login_required
     def get(self):
-        form=LoginFrom()
-        return render_template('home/index.html', form=form)
-
-    def post(self):
-        pass
+        if current_user.is_authenticated:
+            return render_template("404.html")
+        else:
+            return redirect(url_for("auth.login"))

@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QCM平台</title>
+    <link href="{{url_for('static',filename='css/amazeui.min.css')}}" rel="stylesheet">
+    <!--<link href="{{url_for('static',filename='css/admin.css')}}"  rel="stylesheet">-->
+    <link href="{{url_for('static',filename='css/qcm.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link rel="icon" href="{{url_for('static',filename='img/codyy.ico')}}" type="image/x-icon">
+    <script src="{{url_for('static',filename='js/app.js')}}"></script>
+    <script src="{{url_for('static',filename='js/echarts.common.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery-3.1.0.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+</head>
+<body style="">
+{% block navbar %}
+<div class="am-topbar admin-header">
+    <div class="am-topbar-brand" style="height: 40px;">
+        <div href="javascript:;" class="tpl-logo">
+            <img src="{{url_for('static',filename='img/logo.png')}}" height="auto" alt="" class="img-responsive">
+        </div>
+    </div>
+    <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+        <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">
+            <li class="am-hide-sm-only">
+            </li>
+            {#
+            <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+                <a class="am-dropdown-toggle tpl-header-list-link" href="{{url_for('user.setting')}}">
+                    <span class="tpl-header-list-user-nick">
+                        {{session.username}}
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="{{url_for('home.logout')}}" class="tpl-header-list-link">
+                    <strong>退出</strong>
+                </a>
+            </li>
+            #}
+        </ul>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+{% if current_user.is_authenticated %}
+<div class="tpl-page-container tpl-page-header-fixed">
+    <div class="tpl-left-nav tpl-left-nav-hover" style="">
+        <div class="tpl-left-nav-list">
+            <ul class="tpl-left-nav-menu ">
+                {#
+                <li class="tpl-left-nav-item">
+                    <a href="www.baidu.com" class="nav-link ">
+                        <i class="am-icon-home"></i>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li class="tpl-left-nav-item">
+                    <a href="{{url_for('home.project')}}" class="nav-link tpl-left-nav-link-list">
+                        <i class="am-icon-bar-chart"></i>
+                        <span>周报</span>
+                    </a>
+                </li>
+                {% if current_user.is_sper== 1 %}
+                <li class="tpl-left-nav-item">
+                    <a href="{{url_for('home.adminuser')}}" class="nav-link tpl-left-nav-link-list">
+                        <span class=" am-icon-user"></span>
+                        <span>用户管理</span>
+                    </a>
+                </li>
+                <li class="tpl-left-nav-item">
+                    <a href="{{url_for('admin.index')}}" class="nav-link tpl-left-nav-link-list">
+                        <span class=" am-icon-user-md"></span>
+                        <span>后台管理</span>
+                    </a>
+                </li>
+                {% else %}
+                {% endif %}#}
+            </ul>
+        </div>
+    </div>
+    {% endif %}
+    {% for message in get_flashed_messages() %}
+    <div id="myAlert" class="alert alert-warning" style="width: 50%;margin-left: 30%;">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block page_content %}
+{% endblock %}
+
+{%block fenye%}
+{%endblock%}
+
+{% block scripts %}
+{{ moment.include_moment() }}
+{% endblock %}
+
+<script type='text/javascript'>
+    $(document).ready(function(){
+        $('.tpl-left-nav-menu li a').each(function(){
+            if($($(this))[0].pathname==String(window.location['pathname']))
+                $(this).addClass('active');
+        });
+    });
+
+</script>
+</body>
+</html>

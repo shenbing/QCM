@@ -12,6 +12,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config(object):
     SECRET_KEY = 'welcome to codyy'
+    COVERAGE = False
     MAIL_SERVER = 'mail.codyy.com'
     MAIL_PORT = 25
     MAIL_USE_TLS = True
@@ -26,6 +27,7 @@ class Config(object):
     DEBUG = True
     PER_PAGE = 20
     SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://root:aA111111@localhost:3306/test'
+    REMEMBER_COOKIE_DURATION = 1800
 
     @staticmethod
     def init_app(app):

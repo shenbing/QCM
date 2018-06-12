@@ -5,7 +5,8 @@
 @time: 2018/6/8 14:30
 """
 
-from .views import *
-from .views import home
+from app.home.views import *
+from app.home import home
 
-home.add_url_rule('/login',view_func=LoginView.as_view('login'))
+home.add_url_rule('/',view_func=IndexView.as_view('/'))
+home.add_url_rule('/index',view_func=IndexView.as_view('index'))
