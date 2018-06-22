@@ -12,6 +12,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config(object):
     SECRET_KEY = 'welcome to codyy'
+    WTF_CSRF_ENABLED = False
     COVERAGE = False
     MAIL_SERVER = 'mail.codyy.com'
     MAIL_PORT = 25

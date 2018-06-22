@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% import "_macros.html" as macros %}
+{% block content %}
+    <div id="page-wrapper">
+        <div class="header">
+            <h1 class="page-header">首页</h1>
+            <ol class="breadcrumb">
+                <li><a href="#">首页</a></li>
+                <li class="active">导航</li>
+            </ol>
+        </div>
+        <div id="page-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-action">
+                           测试
+                        </div>
+                        <div class="card-content">
+                            <p>测试内容</p>
+                            <div class="clearBoth"><br/></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-action">
+                           测试
+                        </div>
+                        <div class="card-content">
+                            <p>测试内容</p>
+                            <div class="clearBoth"><br/></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script type='text/javascript'>
+    $(document).ready(function(){
+        $('#main-menu li a').each(function(){
+            if($(this).attr("href") == String(window.location['pathname']))
+                $(this).addClass('active-menu');
+        });
+    })
+</script>
+{% endblock %}

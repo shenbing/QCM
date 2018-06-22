@@ -13,9 +13,9 @@ from flask import redirect,url_for
 from flask_login import login_required
 
 class IndexView(MethodView):
-    # @login_required
+    @login_required
     def get(self):
         if current_user.is_authenticated:
-            return render_template("404.html")
+            return render_template("home/index.html")
         else:
             return redirect(url_for("auth.login"))

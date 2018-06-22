@@ -67,17 +67,13 @@ def test(coverage):
 def deploy():
     # migrate database to latest revision
     # init()
-    # dbmigrate()
-    # upgrade()
+    dbmigrate()
+    upgrade()
     # Organization.insert_organizations()
     # Role.insert_roles()
-    # admin = User(user_name='Administrator', password='666666', real_name='Administrator', admin_flag = True)
+    # admin = User(user_name='administrator', password='666666', real_name='administrator', admin_flag = True)
     # db.session.add(admin)
     # db.session.commit()
-    print(User.query.filter_by(user_name='administrator').first().is_admin)
-
-
-
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)

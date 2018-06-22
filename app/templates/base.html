@@ -1,113 +1,78 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>QCM平台</title>
-    <link href="{{url_for('static',filename='css/amazeui.min.css')}}" rel="stylesheet">
-    <!--<link href="{{url_for('static',filename='css/admin.css')}}"  rel="stylesheet">-->
-    <link href="{{url_for('static',filename='css/qcm.css')}}" rel="stylesheet">
-    <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <title>QCM管理平台</title>
     <link rel="icon" href="{{url_for('static',filename='img/codyy.ico')}}" type="image/x-icon">
-    <script src="{{url_for('static',filename='js/app.js')}}"></script>
-    <script src="{{url_for('static',filename='js/echarts.common.min.js')}}"></script>
+    <link href="{{url_for('static',filename='css/amazeui.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/static/materialize/css/materialize.min.css" media="screen,projection" />
+    <link href="{{url_for('static',filename='css/materialize.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" />
+    <link href="{{url_for('static',filename='css/custom-styles.css')}}" rel="stylesheet">
     <script src="{{url_for('static',filename='js/jquery-3.1.0.min.js')}}"></script>
     <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+    <script src="/static/materialize/js/materialize.min.js"></script>
+    <script src="/static/js/jquery.metisMenu.js"></script>
+    <script src="{{url_for('static',filename='js/echarts.common.min.js')}}"></script>
+    <script src="/static/js/custom-scripts.js"></script>
 </head>
-<body style="">
-{% block navbar %}
-<div class="am-topbar admin-header">
-    <div class="am-topbar-brand" style="height: 40px;">
-        <div href="javascript:;" class="tpl-logo">
-            <img src="{{url_for('static',filename='img/logo.png')}}" height="auto" alt="" class="img-responsive">
+<body>
+<div id="wrapper">
+    <nav class="navbar navbar-default top-navbar" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+            <a class="navbar-brand waves-effect waves-dark" href="index.html">
+                <strong>QCM 管理平台</strong></a>
+            <div id="sideNav" href=""><i class="material-icons dp48">toc</i></div>
         </div>
-    </div>
-    <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
-        <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">
-            <li class="am-hide-sm-only">
-            </li>
-            {#
-            <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
-                <a class="am-dropdown-toggle tpl-header-list-link" href="{{url_for('user.setting')}}">
-                    <span class="tpl-header-list-user-nick">
-                        {{session.username}}
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="{{url_for('home.logout')}}" class="tpl-header-list-link">
-                    <strong>退出</strong>
-                </a>
-            </li>
-            #}
-        </ul>
-    </div>
-</div>
-{% endblock %}
 
-{% block content %}
-{% if current_user.is_authenticated %}
-<div class="tpl-page-container tpl-page-header-fixed">
-    <div class="tpl-left-nav tpl-left-nav-hover" style="">
-        <div class="tpl-left-nav-list">
-            <ul class="tpl-left-nav-menu ">
-                {#
-                <li class="tpl-left-nav-item">
-                    <a href="www.baidu.com" class="nav-link ">
-                        <i class="am-icon-home"></i>
-                        <span>首页</span>
-                    </a>
+        <ul class="nav navbar-top-links navbar-right">
+            <li><a class="dropdown-button waves-effect waves-dark" href="#" data-activates="dropdown"><i
+                    class="fa fa-user fa-fw"></i> <b>{{ current_user.real_name }}</b> <i
+                    class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+    </nav>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown" class="dropdown-content">
+        <li><a href="#"><i class="fa fa-gear fa-fw"></i> 设置</a>
+        </li>
+        <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> 退出</a>
+        </li>
+    </ul>
+    <!--/. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li>
+                    <a href="{{ url_for('home.index') }}" class="waves-effect waves-dark"><i class="fa fa-dashboard"></i>首页</a>
                 </li>
-                <li class="tpl-left-nav-item">
-                    <a href="{{url_for('home.project')}}" class="nav-link tpl-left-nav-link-list">
-                        <i class="am-icon-bar-chart"></i>
-                        <span>周报</span>
-                    </a>
+                <li>
+                    <a href="ui-elements.html" class="waves-effect waves-dark"><i class="fa fa-desktop"></i>周报</a>
                 </li>
-                {% if current_user.is_sper== 1 %}
-                <li class="tpl-left-nav-item">
-                    <a href="{{url_for('home.adminuser')}}" class="nav-link tpl-left-nav-link-list">
-                        <span class=" am-icon-user"></span>
-                        <span>用户管理</span>
-                    </a>
+                <li>
+                    <a href="#" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>基础管理<span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#">用户管理</a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="tpl-left-nav-item">
-                    <a href="{{url_for('admin.index')}}" class="nav-link tpl-left-nav-link-list">
-                        <span class=" am-icon-user-md"></span>
-                        <span>后台管理</span>
-                    </a>
-                </li>
-                {% else %}
-                {% endif %}#}
             </ul>
         </div>
-    </div>
-    {% endif %}
-    {% for message in get_flashed_messages() %}
-    <div id="myAlert" class="alert alert-warning" style="width: 50%;margin-left: 30%;">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        {{ message }}
-    </div>
-    {% endfor %}
+    </nav>
+    <!-- /. NAV SIDE  -->
+
+    {% block content %}
+    {% endblock %}
+
 </div>
-{% endblock %}
-
-{% block page_content %}
-{% endblock %}
-
-{%block fenye%}
-{%endblock%}
-
 {% block scripts %}
 {{ moment.include_moment() }}
 {% endblock %}
-
-<script type='text/javascript'>
-    $(document).ready(function(){
-        $('.tpl-left-nav-menu li a').each(function(){
-            if($($(this))[0].pathname==String(window.location['pathname']))
-                $(this).addClass('active');
-        });
-    });
-
-</script>
 </body>
 </html>

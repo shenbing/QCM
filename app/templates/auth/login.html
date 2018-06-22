@@ -1,69 +1,57 @@
-{% extends "base.html" %}
-{% import "bootstrap/wtf.html" as wtf %}
-
-{% block page_content %}
-<div class="loginDiv">
-    <div class="col-md-4" style="margin-top:100px">
-        <div style="color: red;margin-top:center"><p id="duanyan"></p></div>
-        {{ wtf.quick_form(form) }}
-        <br>
-        {#<p>New user? <a href="{{ url_for('auth.register') }}">保持登录</a>.</p> #}
-        <button type="button" class="btn btn-primary btn-lg btn-block" onclick="login()">登录</button>
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>QCM管理平台</title>
+    <!-- css files -->
+    <link href="static/css/login.style.css" rel='stylesheet' type='text/css' media="all"/>
+    <!-- /css files -->
+</head>
+<body>
+<h1>QCM管理平台</h1>
+<div class="log">
+    <div class="content1">
+        <h2>登 录</h2>
+        <form method="post" action="/login">
+            <input type="text" name="username" value="用户名" onfocus="this.value = '';"
+                   onblur="if (this.value == '') {this.value = '用户名';}">
+            <input type="password" name="password" value="000000" onfocus="this.value = '';"
+                   onblur="if (this.value == '') {this.value = '000000';}">
+            <div class="rmbm">
+                <p style="color:#fff;vertical-align:middle;">
+                    <input type="checkbox" name="rememberme" style="vertical-align:middle;">
+                    保持登录
+                </p>
+            </div>
+            <div class="button-row">
+                <input type="submit" class="sign-in" value="登 录">
+                <input type="reset" class="reset" value="重 置">
+                <div class="clear"></div>
+            </div>
+        </form>
+    </div>
+    <div class="content2">
+        <h2>注 册</h2>
+        <form method="post" action="/register">
+            <input type="text" name="username" value="用户名" onfocus="this.value = '';"
+                   onblur="if (this.value == '') {this.value = '用户名';}">
+            <input type="name" name="name" value="姓名" onfocus="this.value = '';"
+                   onblur="if (this.value == '') {this.value = '姓名';}">
+            <input type="email" name="email" value="邮箱" onfocus="this.value = '';"
+                   onblur="if (this.value == '') {this.value = '邮箱';}">
+            <input type="password" name="password" value="000000" onfocus="this.value = '';"
+                   onblur="if (this.value == '') {this.value = '000000';}">
+            <input type="submit" class="register" value="注 册">
+        </form>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="footer navbar-fixed-bottom ">
+    <div class="container" style="color:#fff;">
+        Copyright @ 2018 Aaron. 保留所有权利。
     </div>
 </div>
-<style type="text/css">
-    .loginDiv {
-        margin-left:35%;
-        margin-right:auto;
-        width:70%
-        }
-</style>
-{% endblock %}
-
-{% block scripts %}
-<script type='text/javascript'>
-    function login() {
-        var username = document.getElementById('username').value;
-        var password = document.getElementById('password').value;
-        var remember_me = document.getElementById('remember_me').checked;
-        var message = document.getElementById('duanyan');
-        if (username.length <1) {
-            message.innerHTML="用户名不能为空！";
-        }else {
-            if (password.length < 1) {
-                message.innerHTML="密码不能为空！";
-            }else {
-                var data = {};
-                data['username'] = username;
-                data['password'] = password;
-                data['remember_me'] = remember_me;
-                $.ajax({
-                    url: '{{ url_for('auth.login') }}',
-                    type: 'POST',
-                    data: JSON.stringify(data),
-                    contentType: 'application/json; charset=UTF-8',
-                    processData: false,
-                    success: function (result) {
-                        if (result['code'] == 200) {
-                            location.href='{{ url_for('home.index') }}';
-                        }
-                        else {
-                            message.innerHTML=(result['msg']);
-                        }
-                    }
-                });
-            }
-        }
-    }
-
-
-
-
-
-
-
-
-</script>
-{% endblock %}
-
-
+</body>
+</html>

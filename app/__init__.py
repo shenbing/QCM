@@ -29,7 +29,7 @@ db = SQLAlchemy(metadata=metadata)
 login_manager = LoginManager()
 login_manager.login_view = "auth.login"
 login_manager.session_protection = "strong"
-login_manager.login_message = "请登录QCM平台！"
+login_manager.login_message = "请登录QCM管理平台！"
 moment = Moment()
 
 
