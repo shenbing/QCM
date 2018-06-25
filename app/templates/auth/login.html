@@ -6,12 +6,21 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>QCM管理平台</title>
     <!-- css files -->
+    <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <script src="{{url_for('static',filename='js/jquery-3.1.0.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
     <link href="static/css/login.style.css" rel='stylesheet' type='text/css' media="all"/>
     <!-- /css files -->
 </head>
 <body>
 <h1>QCM管理平台</h1>
 <div class="log">
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+    </div>
+    {% endfor %}
     <div class="content1">
         <h2>登 录</h2>
         <form method="post" action="/login">

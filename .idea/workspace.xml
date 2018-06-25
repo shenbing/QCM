@@ -2,108 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0912b0b7-2ecf-4073-be5a-4496c37fdbe7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/common/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/common/decorators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/custom-styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/login.style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/materialize.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/fonts/fontawesome-webfontba72.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/fonts/fontawesome-webfontba72.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/fonts/fontawesome-webfontba72.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/fonts/fontawesome-webfontba72.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/fonts/fontawesome-webfontd41d.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/less/animated.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/less/bordered-pulled.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/less/core.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/less/fixed-width.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/less/font-awesome.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/less/icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/less/larger.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/less/list.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/less/mixins.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/less/path.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/less/rotated-flipped.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/less/screen-reader.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/less/stacked.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/less/variables.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/scss/_animated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/scss/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/scss/_fixed-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/scss/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/scss/_larger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/scss/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/scss/_path.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/scss/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/scss/_stacked.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/font-awesome/scss/font-awesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/img/bg-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/img/lock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/img/login-background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/img/mail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/img/person.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/img/phone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/custom-scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/jquery.metisMenu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/css/materialize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/css/materialize.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Light.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Medium.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Thin.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Thin.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/fonts/roboto/Roboto-Thin.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/js/materialize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/materialize/js/materialize.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/auth/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/css/admin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/css/qcm.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/qcm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/app.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auth/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -120,50 +23,45 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/auth/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+            <state relative-caret-position="205">
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
               <folding>
-                <element signature="e#91#170#0" expanded="true" />
+                <element signature="e#91#177#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Python36/Lib/http/server.py">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/auth/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="418" selection-start-line="418" selection-end-line="418" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_weakrefset.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Python36/Lib/_weakrefset.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/home/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="240">
+              <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
               <folding>
-                <element signature="e#91#119#0" expanded="true" />
+                <element signature="e#91#122#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/home/views.py">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/templates/auth/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+            <state relative-caret-position="300">
+              <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#p#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -180,9 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>_load_user</find>
-      <find>reload_user</find>
-      <find>remember_me</find>
       <find>binary</find>
       <find>bina</find>
       <find>Column</find>
@@ -210,6 +105,9 @@
       <find>#f8f8f8</find>
       <find>less</find>
       <find>#</find>
+      <find>\&lt;\!doctype html\&gt;\n\&lt;html\&gt;\n\&lt;head\&gt;\n    \&lt;meta charset\=\&quot;UTF\-8\&quot;\&gt;\n    \&lt;meta name\=\&quot;viewport\&quot; content\=\&quot;width\=device\-width\, initial\-scale\=1\&quot;\&gt;\n    \&lt;meta http\-equiv\=\&quot;Content\-Type\&quot; content\=\&quot;text\/html\; charset\=utf\-8\&quot;\/\&gt;\n    \&lt;title\&gt;QCM管理平台\&lt;\/title\&gt;\n    \&lt;\!\-\- css files \-\-\&gt;\n    \&lt;link href\=\&quot;static\/css\/login\.style\.css\&quot; rel\=\'stylesheet\' type\=\'text\/css\' media\=\&quot;all\&quot;\/\&gt;\n    \&lt;\!\-\- \/css files \-\-\&gt;\n\&lt;\/head\&gt;\n\&lt;body\&gt;\n\&lt;h1\&gt;QCM管理平台\&lt;\/h1\&gt;\n\&lt;div class\=\&quot;log\&quot;\&gt;\n    \&lt;div class\=\&quot;content1\&quot;\&gt;\n        \&lt;h2\&gt;登 录\&lt;\/h2\&gt;\n        \{\% for message in get_flashed_messages\(\) \%\}\n    \&lt;div class\=\&quot;alert alert\-warning\&quot;\&gt;\n        \&lt;button type\=\&quot;button\&quot; class\=\&quot;close\&quot; data\-dismiss\=\&quot;alert\&quot;\&gt;\&amp;times\;\&lt;\/button\&gt;\n        \{\{ message \}\}\n    \&lt;\/div\&gt;\n\{\% endfor \%\}\n        \&lt;form method\=\&quot;post\&quot; action\=\&quot;\/login\&quot;\&gt;\n            \&lt;input type\=\&quot;text\&quot; name\=\&quot;username\&quot; value\=\&quot;用户名\&quot; onfocus\=\&quot;this\.value \= \'\'\;\&quot;\n                   onblur\=\&quot;if \(this\.value \=\= \'\'\) \{this\.value \= \'用户名\'\;\}\&quot;\&gt;\n            \&lt;input type\=\&quot;password\&quot; name\=\&quot;password\&quot; value\=\&quot;000000\&quot; onfocus\=\&quot;this\.value \= \'\'\;\&quot;\n                   onblur\=\&quot;if \(this\.value \=\= \'\'\) \{this\.value \= \'000000\'\;\}\&quot;\&gt;\n            \&lt;div class\=\&quot;rmbm\&quot;\&gt;\n                \&lt;p style\=\&quot;color\:\#fff\;vertical\-align\:middle\;\&quot;\&gt;\n                    \&lt;input type\=\&quot;checkbox\&quot; name\=\&quot;rememberme\&quot; style\=\&quot;vertical\-align\:middle\;\&quot;\&gt;\n                    保持登录\n                \&lt;\/p\&gt;\n            \&lt;\/div\&gt;\n            \&lt;div class\=\&quot;button\-row\&quot;\&gt;\n                \&lt;input type\=\&quot;submit\&quot; class\=\&quot;sign\-in\&quot; value\=\&quot;登 录\&quot;\&gt;\n                \&lt;input type\=\&quot;reset\&quot; class\=\&quot;reset\&quot; value\=\&quot;重 置\&quot;\&gt;\n                \&lt;div class\=\&quot;clear\&quot;\&gt;\&lt;\/div\&gt;\n            \&lt;\/div\&gt;\n        \&lt;\/form\&gt;\n    \&lt;\/div\&gt;\n    \&lt;div class\=\&quot;content2\&quot;\&gt;\n        \&lt;h2\&gt;注 册\&lt;\/h2\&gt;\n        \&lt;form method\=\&quot;post\&quot; action\=\&quot;\/register\&quot;\&gt;\n            \&lt;input type\=\&quot;text\&quot; name\=\&quot;username\&quot; value\=\&quot;用户名\&quot; onfocus\=\&quot;this\.value \= \'\'\;\&quot;\n                   onblur\=\&quot;if \(this\.value \=\= \'\'\) \{this\.value \= \'用户名\'\;\}\&quot;\&gt;\n            \&lt;input type\=\&quot;name\&quot; name\=\&quot;name\&quot; value\=\&quot;姓名\&quot; onfocus\=\&quot;this\.value \= \'\'\;\&quot;\n                   onblur\=\&quot;if \(this\.value \=\= \'\'\) \{this\.value \= \'姓名\'\;\}\&quot;\&gt;\n            \&lt;input type\=\&quot;email\&quot; name\=\&quot;email\&quot; value\=\&quot;邮箱\&quot; onfocus\=\&quot;this\.value \= \'\'\;\&quot;\n                   onblur\=\&quot;if \(this\.value \=\= \'\'\) \{this\.value \= \'邮箱\'\;\}\&quot;\&gt;\n            \&lt;input type\=\&quot;password\&quot; name\=\&quot;password\&quot; value\=\&quot;000000\&quot; onfocus\=\&quot;this\.value \= \'\'\;\&quot;\n                   onblur\=\&quot;if \(this\.value \=\= \'\'\) \{this\.value \= \'000000\'\;\}\&quot;\&gt;\n            \&lt;input type\=\&quot;submit\&quot; class\=\&quot;register\&quot; value\=\&quot;注 册\&quot;\&gt;\n        \&lt;\/form\&gt;\n    \&lt;\/div\&gt;\n    \&lt;div class\=\&quot;clear\&quot;\&gt;\&lt;\/div\&gt;\n\&lt;\/div\&gt;\n\&lt;div class\=\&quot;footer navbar\-fixed\-bottom \&quot;\&gt;\n    \&lt;div class\=\&quot;container\&quot; style\=\&quot;color\:\#fff\;\&quot;\&gt;\n        Copyright \@ 2018 Aaron\. 保留所有权利\。\n    \&lt;\/div\&gt;\n\&lt;\/div\&gt;\n\&lt;\/body\&gt;\n\&lt;\/html\&gt;</find>
+      <find>Set &quot;meta.csrf&quot; instead.</find>
+      <find>__init__</find>
     </findStrings>
     <replaceStrings>
       <replace>Integer</replace>
@@ -242,18 +140,18 @@
         <option value="$PROJECT_DIR$/app/templates/base.html.back" />
         <option value="$PROJECT_DIR$/app/common/decorators.py" />
         <option value="$PROJECT_DIR$/config.py" />
-        <option value="$PROJECT_DIR$/app/auth/forms.py" />
         <option value="$PROJECT_DIR$/app/static/css/login.style.css" />
         <option value="$PROJECT_DIR$/app/auth/urls.py" />
         <option value="$PROJECT_DIR$/app/static/css/custom-styles.css" />
         <option value="$PROJECT_DIR$/app/templates/home/index.html" />
-        <option value="$PROJECT_DIR$/app/templates/auth/login.html" />
-        <option value="$PROJECT_DIR$/app/templates/base.html" />
         <option value="$PROJECT_DIR$/app/__init__.py" />
         <option value="$PROJECT_DIR$/app/home/__init__.py" />
         <option value="$PROJECT_DIR$/app/home/urls.py" />
-        <option value="$PROJECT_DIR$/app/auth/views.py" />
         <option value="$PROJECT_DIR$/app/home/views.py" />
+        <option value="$PROJECT_DIR$/app/templates/base.html" />
+        <option value="$PROJECT_DIR$/app/auth/views.py" />
+        <option value="$PROJECT_DIR$/app/auth/forms.py" />
+        <option value="$PROJECT_DIR$/app/templates/auth/login.html" />
       </list>
     </option>
   </component>
@@ -527,6 +425,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32967034" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32637364" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32967034" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32967034" />
@@ -539,7 +438,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -588,23 +486,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/wtforms/validators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask_wtf/form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
@@ -678,13 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="406" column="23" selection-start-line="406" selection-start-column="23" selection-end-line="406" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/auth/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="140" column="40" lean-forward="true" selection-start-line="140" selection-start-column="40" selection-end-line="140" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -789,13 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="34" column="64" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -807,35 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="30" column="27" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/auth/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="23" column="59" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="59" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#p#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/auth/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="14" />
-          <folding>
-            <element signature="e#91#122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-986">
-          <caret line="215" column="20" selection-start-line="215" selection-start-column="12" selection-end-line="215" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -853,13 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/home/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/auth/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -867,30 +698,6 @@
           <folding>
             <element signature="e#91#119#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python36/Lib/_weakrefset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/home/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <element signature="e#91#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python36/Lib/http/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="418" selection-start-line="418" selection-end-line="418" />
         </state>
       </provider>
     </entry>
@@ -943,20 +750,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/auth/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
-          <folding>
-            <element signature="e#91#170#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/home/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python36/Lib/_weakrefset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python36/Lib/http/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="418" selection-start-line="418" selection-end-line="418" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/home/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/home/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="63" lean-forward="true" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+          <folding>
+            <element signature="e#91#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/auth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="73" column="28" lean-forward="true" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="385" column="4" selection-start-line="385" selection-start-column="4" selection-end-line="385" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/wtforms/validators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="196" column="8" selection-start-line="196" selection-start-column="8" selection-end-line="196" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask_wtf/form.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="157" column="50" selection-start-line="157" selection-start-column="44" selection-end-line="157" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/auth/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding>
+            <element signature="e#91#177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/auth/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="e#91#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/auth/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#p#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
