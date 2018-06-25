@@ -128,7 +128,7 @@ h1 {
 }
 .content1 input[type="text"] {
 	padding:10px 40px 10px 10px;
-	width:70%;
+	width:80%;
 	border:1px solid #fff;
 	color:#fff;
 	text-align:left;
@@ -142,7 +142,7 @@ h1 {
 }
 .content1 input[type="password"] {
 	padding:10px 40px 10px 10px;
-	width:70%;
+	width:80%;
 	border:1px solid #fff;
 	color:#fff;
 	text-align:left;
@@ -183,7 +183,7 @@ h1 {
 	margin-left:62px;
 	float:left;
 	text-transform:uppercase;
-	border-radius:4px;
+	border-radius:18px;
 	transition: all 0.5s ease-in-out;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
@@ -207,7 +207,7 @@ h1 {
 	font-weight: 300;
 	font-family: 'Nunito', sans-serif;
 	text-transform:uppercase;
-	border-radius:4px;
+	border-radius:18px;
 	transition: all 0.5s ease-in-out;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
@@ -215,7 +215,7 @@ h1 {
 }
 .reset:hover {
 	background-color:#791F16;
-	color:#fff;	
+	color:#fff;
 }
 .content2 {
 	width:48%;
@@ -227,48 +227,48 @@ h1 {
 }
 .content2 input[type="text"] {
 	padding:10px 40px 10px 10px;
-	width:70%;
+	width:80%;
 	border:1px solid white;
-	color:#fff; 
+	color:#fff;
 	text-align:left;
 	outline:none;
 	font-size:18px;
 	background:url(../img/person.png) no-repeat 440px 10px;
 	margin-top:5%;
 	font-weight: 300;
-	
+
 	border-radius: 4px;
 }
 .content2 input[type="name"] {
 	padding:10px 40px 10px 10px;
-	width:70%;
+	width:80%;
 	border:1px solid white;
-	color:#fff; 
+	color:#fff;
 	text-align:left;
 	outline:none;
 	font-size:18px;
 	background:url(../img/person.png) no-repeat 440px 10px;
 	margin-top:4%;
 	font-weight: 300;
-	
+
 	border-radius: 4px;
 }
 .content2 input[type="email"] {
 	padding:10px 40px 10px 10px;
-	width:70%;
+	width:80%;
 	border:1px solid white;
-	color:#fff; 
+	color:#fff;
 	text-align:left;
 	outline:none;
 	font-size:18px;
 	background:url(../img/mail.png) no-repeat 440px 10px;
 	margin-top:4%;
-	
+
 	border-radius: 4px;
 }
 .content2 input[type="password"] {
 	padding:10px 40px 10px 10px;
-	width:70%;
+	width:80%;
 	border:1px solid white;
 	color:#fff;
 	text-align:left;
@@ -277,13 +277,13 @@ h1 {
 	background:url(../img/lock.png) no-repeat 440px 10px;
 	margin-top:4%;
 	font-weight: 300;
-	
+
 	border-radius: 4px;
 }
 .register {
 	padding:10px;
 	background-color:#4C9A39;
-	width:78%;
+	width:80%;
 	border:none;
 	cursor:pointer;
 	color:#fff;
@@ -292,7 +292,7 @@ h1 {
 	font-size:20px;
 	margin-top:7%;
 	text-transform:uppercase;
-	border-radius:4px;
+	border-radius:18px;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
@@ -335,10 +335,10 @@ h1 {
 	background:url(../img/lock.png) no-repeat 500px 10px;
 	}
 	.sign-in {
-	margin-left:78px;
+	margin-left:65px;
 	}
 	.reset {
-	margin-right:78px;
+	margin-right:65px;
 	}
 	.content2 input[type="text"] {
 		background: url(../img/person.png) no-repeat 500px 10px;
@@ -796,7 +796,7 @@ h1 {
 
 @media (max-width: 667px){
 	.content1 {
-    width: 70%;
+    width: 80%;
 	}
 	.sign-in {
     margin-left: 45px;
@@ -807,7 +807,7 @@ h1 {
     width: 120px;
 	}
 	.content2{
-	width:70%;
+	width:80%;
 	}
 }
 
@@ -837,7 +837,7 @@ h1 {
     background-size: 7% 50%;
 }
 	.content1 {
-    width: 70%;
+    width: 80%;
 	}
 	.sign-in {
     margin-left:41px;

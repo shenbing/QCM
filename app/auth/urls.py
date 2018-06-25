@@ -10,4 +10,5 @@ from app.auth import auth
 
 auth.add_url_rule('/',view_func=LoginView.as_view('/'))
 auth.add_url_rule('/login',view_func=LoginView.as_view('login'))
-# auth.add_url_rule('/register',view_func=RegisterView.as_view('register'))
+auth.add_url_rule('/logout',view_func=LogoutView.as_view('logout'))
+auth.add_url_rule('/register',view_func=RegisterView.as_view('register'))
