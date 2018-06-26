@@ -44,7 +44,7 @@ class LogoutView(MethodView):
     @login_required
     def get(self):
         logout_user()
-        return render_template("auth/login.html")
+        return redirect(url_for("auth.login"))
 
 
 class RegisterView(MethodView):
