@@ -29,6 +29,9 @@ class Config(object):
     PER_PAGE = 20
     SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://root:aA111111@localhost:3306/test'
     REMEMBER_COOKIE_DURATION = 1800
+    ZENTAO_LOGINURL = "http://10.1.210.51:80/zentao/user-login.html"
+    ZENTAO_USERNAME = 'shenbing'
+    ZENTAO_PASSWORD = 'aA!111111'
 
     @staticmethod
     def init_app(app):

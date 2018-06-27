@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% import "_macros.html" as macros %}
+{% block content %}
+<div id="page-wrapper">
+    <div class="header">
+        <h1 class="page-header">缺陷状态</h1>
+        <ol class="breadcrumb">
+            <li><a href="#">缺陷统计</a></li>
+            <li class="active">缺陷状态</li>
+        </ol>
+    </div>
+    <script src="/static/js/echarts-all.js"></script>
+    {% for name, bug_status in form.items() if bug_status != {} %}
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="card-action">
+                </div>
+                <div id="product_{{ name }}" class="card-content" style="height:400px">
+                </div>
+                <script type="text/javascript">
+                    var bug_status = {{ bug_status|tojson }};
+                    var j = 0;
+                    var solved = 0;
+                    var actived = 0;
+                    var _closed = 0;
+                    for (var i in bug_status) {
+                        if (i == '激活'){
+                            actived = bug_status[i];
+                        }
+                        else if (i == '已解决'){
+                            solved = bug_status[i];
+                        }
+                    }
+                    var myChart = echarts.init(document.getElementById("product_{{ name }}"));
+                    var option = {
+                        title : {
+                            text: '{{ name }}',
+                            subtext: '缺陷状态',
+                             x:'center'
+                        },
+                        tooltip : {
+                            trigger: 'item',
+                            formatter: "{a} <br/>{b} : {c} ({d}%)"
+                        },
+                        legend: {
+                            orient : 'vertical',
+                            x : 'left',
+                            data:['激活','已解决']
+                        },
+                        toolbox: {
+                            show : true,
+                            feature : {
+                                mark : {show: true},
+                                dataView : {show: true, readOnly: false},
+                                magicType : {show: true, type: ['pie', 'funnel'],option: {
+                                    funnel: {
+                                        x: '25%',
+                                        width: '50%',
+                                        funnelAlign: 'left',
+                                        max: 1548
+                                    }
+                                 }},
+                                restore : {show: true},
+                                saveAsImage : {show: true}
+                            }
+                        },
+                        calculable : true,
+                        series : [
+                            {
+                                name:'缺陷状态',
+                                type:'pie',
+                                radius : '55%',
+                                center: ['50%', '60%'],
+                                data : [{value:actived, name:'未解决'},{value:solved, name:'已解决'}]
+                            }
+                        ]
+                    };
+                    myChart.setOption(option);
+                </script>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script type='text/javascript'>
+    $(document).ready(function(){
+        $('#main-menu li a').each(function(){
+            if($(this).attr("href") == String(window.location['pathname']))
+                $(this).addClass('active-menu');
+        });
+        $('a.bug-info').click();
+    })
+</script>
+<script language="JavaScript">
+    function refresh(){window.location.reload();}
+    setTimeout('refresh()', 60000);
+
+</script>
+{% endblock %}

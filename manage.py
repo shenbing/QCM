@@ -13,6 +13,7 @@ import os
 import sys
 from app.auth import auth
 from app.home import home
+from app.bug import bug
 from app.auth.models import Organization
 from app.auth.models import Role
 from app.auth.models import User
@@ -29,6 +30,7 @@ FlaskCLI(app)
 # 注册蓝图
 app.register_blueprint(auth)
 app.register_blueprint(home)
+app.register_blueprint(bug)
 
 COV = None
 if app.config.get("COVERAGE"):

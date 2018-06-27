@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% import "_macros.html" as macros %}
+{% block content %}
+<div id="page-wrapper">
+    <div class="header">
+        <h1 class="page-header">每日新增</h1>
+        <ol class="breadcrumb">
+            <li><a href="#">缺陷统计</a></li>
+            <li class="active">每日新增</li>
+        </ol>
+    </div>
+    <script src="/static/js/echarts-all.js"></script>
+    {% for name, data in form.items() if data != {} %}
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="card-action">
+                </div>
+                <div id="product_{{ name }}" class="card-content" style="height:400px">
+                </div>
+                <script  type="text/javascript">
+                    var data = {{ data|tojson }};
+                    var date_array = new Array();
+                    var date_number_array = new Array();
+                    var j = 0;
+                    var max_number = 0;
+                    for (var i in data) {
+                        date_array[j] = i;
+                        date_number_array[j] = Number(data[i]);
+                        if (max_number < Number(data[i])){
+                            max_number = Number(data[i]);
+                        }
+                        j++;
+                    }
+                    while (max_number % 10 != 0)
+                    {
+                        max_number++;
+                    }
+                    var myChart = echarts.init(document.getElementById("product_{{ name }}"));
+                    var option = {
+                        title : {
+                            text: '{{ name }}',
+                        },
+                        tooltip : {
+                            trigger: 'axis'
+                        },
+                        legend: {
+                            data:['每日新增缺陷']
+                        },
+                        toolbox: {
+                            show : true,
+                            feature : {
+                                mark : {show: true},
+                                dataView : {show: true, readOnly: false},
+                                magicType : {show: true, type: ['line', 'bar']},
+                                restore : {show: true},
+                                saveAsImage : {show: true}
+                            }
+                        },
+                        calculable : true,
+                        xAxis : [
+                            {
+                                type : 'category',
+                                data : date_array
+                            }
+                        ],
+                        yAxis : [
+                            {
+                                type : 'value',
+                                min: 0,
+                                max: max_number,
+                                boundaryGap: [0, 0.1]
+                            }
+                        ],
+                        series : [
+                            {
+                                name:'每日新增缺陷',
+                                type:'bar',
+                                data : date_number_array,
+                                markPoint : {
+                                    data : [
+                                        {type : 'max',name : '天最多'},
+                                        {type : 'min', name : '天最少'}
+                                    ]
+                                },
+                                markLine : {
+                                    data : [
+                                        {type : 'average', name : '平均值'}
+                                    ]
+                                }
+                            }
+                        ]
+                    };
+                    myChart.setOption(option);
+                </script>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script type='text/javascript'>
+    $(document).ready(function(){
+        $('#main-menu li a').each(function(){
+            if($(this).attr("href") == String(window.location['pathname']))
+                $(this).addClass('active-menu');
+        });
+        $('a.bug-info').click();
+    })
+</script>
+<script language="JavaScript">
+    function refresh(){window.location.reload();}
+    setTimeout('refresh()', 60000);
+</script>
+{% endblock %}
