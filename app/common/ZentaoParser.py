@@ -63,8 +63,8 @@ class ZentaoParser(object):
             for item in value_data:
                 if len(item.contents) == 1:
                     value_list.append(int(item.contents[0]))
-            date_list = date_list[-30:]
-            value_list = value_list[-30:]
+            # date_list = date_list[-60:]
+            # value_list = value_list[-60:]
             bugs_dict = dict(zip(date_list, value_list))
             result[name] = bugs_dict
             soup.clear()
@@ -85,7 +85,6 @@ class ZentaoParser(object):
                 if len(item.contents) == 1:
                     category = str(item.contents[0])
                     category_list.append(category)
-
             value_data = soup.find_all(name="td", attrs={'class': 'chart-value'})
             for item in value_data:
                 if len(item.contents) == 1:
@@ -100,3 +99,4 @@ if __name__ == '__main__':
     password = 'aA!111111'
     zentaoParser = ZentaoParser(loginUrl, username, password)
     print(zentaoParser.getBugStatus())
+    print(zentaoParser.getNewlyBug())

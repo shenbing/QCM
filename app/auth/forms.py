@@ -6,7 +6,7 @@
 """
 
 from flask_wtf import FlaskForm
-from wtforms import StringField, validators, PasswordField, SelectField, BooleanField
+from wtforms import StringField, validators, PasswordField, SelectField, BooleanField, SubmitField
 
 
 class LoginForm(FlaskForm):
@@ -33,3 +33,15 @@ class RegisterForm(FlaskForm):
                        render_kw={'placeholder': '姓名'})
     email = StringField('邮箱', [validators.DataRequired('邮箱为必填项'), validators.email('邮箱地址非法')],
                         render_kw={'placeholder': '邮箱'})
+
+class ProfileForm(FlaskForm):
+    username = StringField('用户名', render_kw={'readonly': 'readonly'})
+    password = PasswordField('密码',
+                             [validators.DataRequired('密码为必填项'), validators.Length(min=6, max=16, message='密码长度6-16位')],
+                             render_kw={'placeholder': '密码'})
+    name = StringField('姓名', [validators.DataRequired('姓名为必填项'), validators.Length(min=2, max=10, message='姓名长度2-10位')],
+                       render_kw={'placeholder': '姓名'})
+    email = StringField('邮箱', [validators.DataRequired('邮箱为必填项'), validators.email('邮箱地址非法')],
+                        render_kw={'placeholder': '邮箱'})
+    rolename = StringField('角色', render_kw={'readonly': 'readonly'})
+    submit = SubmitField('保 存')

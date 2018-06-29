@@ -7,8 +7,8 @@
 
 from flask import render_template, request, jsonify, session, url_for, redirect, flash
 from flask.views import MethodView, View
-from app.auth.forms import LoginForm, RegisterForm
-from flask_login import login_user, logout_user, login_required
+from app.auth.forms import LoginForm, RegisterForm, ProfileForm
+from flask_login import login_user, logout_user, login_required, current_user
 from app.auth.models import User
 from sqlalchemy import func
 from ..auth.models import db
@@ -70,3 +70,31 @@ class RegisterView(MethodView):
         else:
             flash(form.errors.popitem()[1][0])
             return render_template("auth/login.html")
+
+class ProfileView(MethodView):
+    @login_required
+    def get(self):
+        form = ProfileForm()
+        user = User.query.filter_by(user_name=func.binary(current_user.user_name)).first()
+        form.username.data = current_user.user_name
+        # form.password.data = user.password
+        form.name.data =  user.real_name
+        form.email.data = user.email
+        form.rolename.data = ','.join([role.role_name for role in user.roles])
+        return render_template("auth/profile.html", form = form)
+
+    @login_required
+    def post(self):
+        form = ProfileForm()
+        if form.validate_on_submit():
+            username = form.data['username']
+            user = User.query.filter_by(user_name=func.binary(username)).first()
+            user.email = form.email.data
+            user.password = form.password.data
+            user.real_name = form.name.data
+            db.session.add(user)
+            db.session.commit()
+            flash("个人资料修改成功！")
+        else:
+            flash(form.errors.popitem()[1][0])
+        return render_template("auth/profile.html", form=form)
