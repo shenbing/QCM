@@ -13,6 +13,7 @@ from app.auth.models import User
 from sqlalchemy import func
 from ..auth.models import db
 from .models import Role
+from datetime import datetime
 
 
 class LoginView(MethodView):
@@ -92,6 +93,7 @@ class ProfileView(MethodView):
             user.email = form.email.data
             user.password = form.password.data
             user.real_name = form.name.data
+            user.update_time = datetime.now()
             db.session.add(user)
             db.session.commit()
             flash("个人资料修改成功！")

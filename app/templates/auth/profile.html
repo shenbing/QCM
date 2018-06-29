@@ -7,13 +7,13 @@
     <div id="page-inner">
         <div class="row">
             <div class="col-lg-12">
+                {% for message in get_flashed_messages() %}
+                <div class="alert alert-warning">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    {{ message }}
+                </div>
+                {% endfor %}
                 <div class="card">
-                    {% for message in get_flashed_messages() %}
-                    <div class="alert alert-warning">
-                        <button type="button" class="close" data-dismiss="alert">&times;</button>
-                        {{ message }}
-                    </div>
-                    {% endfor %}
                     <div class="card-action">
                         个人资料
                     </div>
