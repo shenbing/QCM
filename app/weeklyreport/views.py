@@ -80,7 +80,10 @@ class WeeklyReportWriteView(MethodView):
                 report = WeeklyReport.query.filter_by(user_id=current_user.id, week_count=get_week_count(),
                                                       year=datetime.today().year).first()
                 if report:
-                    flash("本周周报已提交，请勿重复提交")
+                    report.content = form.body.data.replace('<br>', '')
+                    db.session.add(report)
+                    db.session.commit()
+                    flash("周报提交成功")
                     return redirect(url_for('weeklyreport.weeklyreportwrite', weeklyreportid=report.id))
                 else:
                     report = WeeklyReport(content=form.body.data.replace('<br>', ''), user_id=current_user.id,
