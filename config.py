@@ -26,8 +26,8 @@ class Config(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_RECORD_QUERIES = True
     DEBUG = True
-    PER_PAGE = 20
-    SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://root:aA111111@localhost:3306/test'
+    PER_PAGE = 10
+    SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://root:aA111111@localhost:3306/test?charset=utf8'
     REMEMBER_COOKIE_DURATION = 1800
     ZENTAO_LOGINURL = "http://10.1.210.51:80/zentao/user-login.html"
     ZENTAO_USERNAME = 'shenbing'

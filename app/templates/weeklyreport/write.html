@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='wangEditor/css/wangEditor.min.css') }}">
+<style>#body {resize: vertical;height: 500px}</style>
+<style>.wangEditor-container .clearfix {clear:none;}</style>
+{% endblock %}
+{% block content %}
+<div id="page-wrapper">
+    <div class="header">
+        <h1 class="page-header">周报列表</h1>
+        <ol class="breadcrumb">
+            <li><a href="{{url_for('weeklyreport.weeklyreports')}}">周报管理</a></li>
+            <li class="active">编辑周报</li>
+        </ol>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-action">
+                    {% for message in get_flashed_messages() %}
+                    <div class="alert alert-warning">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        {{ message }}
+                    </div>
+                    {% endfor %}
+                    <h3>第{{ week_count }}周({{start_at}}至{{end_at}})工作周报</h3>
+                </div>
+                <div class="card-content" id="test">
+                    <form class="form form-inline" method="post" role="form">
+                        {{ wtf.form_errors(form, hiddens="only") }}
+                        {{ form.body(class='wangEditor') }}
+                        <hr style="height:10pt; visibility:hidden;"/>
+                        {{ wtf.form_field(form.submit) }}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script type='text/javascript'>
+    $(document).ready(function(){
+        $('#main-menu li a').each(function(){
+            if($(this).attr("href") == String(window.location['pathname']))
+                $(this).addClass('active-menu');
+        });
+    })
+
+</script>
+<script type="text/javascript" src="{{ url_for('static', filename='wangEditor/js/wangEditor.min.js') }}"></script>
+<script type="text/javascript">
+    var div = document.getElementById('body');
+    var textarea = document.getElementById('body');
+    var editor = new wangEditor(div);
+    <!--editor.customConfig.menus = ['head','bold','fontSize','fontName','italic','underline','strikeThrough','foreColor','backColor','link','list','justify','quote','emoticon','table','code','undo','redo'];-->
+    <!--editor.customConfig.onchange = function (html) {-->
+            <!--textarea.val(html)-->
+        <!--}-->
+    editor.create();
+    <!--textarea.val(editor.txt.html())-->
+
+</script>
+{% endblock %}

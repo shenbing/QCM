@@ -1,3 +1,10 @@
+# -*- coding:utf-8 -*-
+"""
+@author: shenbing
+@file: ZentaoParser.py
+@time: 2018/6/8 14:30
+"""
+
 from functools import wraps
 from flask import abort, make_response
 from flask_login import current_user

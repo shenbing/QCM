@@ -5,7 +5,7 @@
 @time: 2018/6/8 14:30
 """
 
-from flask import Flask, session
+from flask import Flask, session, g
 from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from flask_sqlalchemy import SQLAlchemy
@@ -15,6 +15,7 @@ from config import Config
 from flask import render_template
 from flask_migrate import Migrate
 from datetime import timedelta
+from app.common.filter import byteToString
 
 bootstrap = Bootstrap()
 metadata = MetaData(
@@ -25,7 +26,7 @@ metadata = MetaData(
         "pk": "pk_%(table_name)s"
     }
 )
-db = SQLAlchemy(metadata=metadata)
+db = SQLAlchemy(metadata=metadata, use_native_unicode='utf8')
 login_manager = LoginManager()
 login_manager.login_view = "auth.login"
 login_manager.session_protection = "strong"
@@ -56,4 +57,13 @@ def create_app():
     def page_not_found(e):
         return render_template('500.html')
 
+    @app.teardown_request
+    def checkin_db(exc):
+        try:
+            g.db.close()
+        except AttributeError:
+            pass
+
+    # 注册自定义jinjia2过滤器
+    app.add_template_filter(byteToString, 'byteToString')
     return app

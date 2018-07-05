@@ -7,7 +7,7 @@
 
 from app import db, login_manager
 from flask import current_app
-from flask_login import UserMixin, AnonymousUserMixin
+from flask_login import UserMixin, AnonymousUserMixin, current_user
 import hashlib
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from datetime import datetime
@@ -123,7 +123,9 @@ class User(UserMixin, db.Model):
         return self.password_md5 == hashlib.md5(password.encode(encoding='utf-8')).hexdigest()
 
     def can(self, permisson):
-        for role in self.roles.all():
+        if current_user.is_admin:
+            return True
+        for role in self.roles:
             if role.has_permission(permisson):
                 return True
         return False
@@ -149,7 +151,7 @@ class User(UserMixin, db.Model):
         if self.admin_flag:
             return True
         for role in self.roles.all():
-            if role.name == 'ADMINISTRATOR':
+            if role.role_name == 'ADMINISTRATOR':
                 return True
         return False
 

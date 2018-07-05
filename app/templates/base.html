@@ -16,6 +16,8 @@
     <script src="/static/materialize/js/materialize.min.js"></script>
     <script src="/static/js/jquery.metisMenu.js"></script>
     <script src="/static/js/custom-scripts.js"></script>
+    {% block head %}
+    {% endblock %}
 </head>
 <body>
 <div id="wrapper">
@@ -51,7 +53,8 @@
                             class="fa fa-dashboard"></i>首页</a>
                 </li>
                 <li>
-                    <a href="ui-elements.html" class="waves-effect waves-dark"><i class="fa fa-file-text-o"></i>周报</a>
+                    <a href="{{ url_for('weeklyreport.weeklyreports') }}" class="waves-effect waves-dark"><i
+                            class="fa fa-file-text-o"></i>周报管理</a>
                 </li>
                 <li>
                     <a href="#" class="waves-effect waves-dark bug-info"><i class="fa fa-sitemap"></i>缺陷统计<span
@@ -86,7 +89,9 @@
 
 </div>
 {% block scripts %}
+{{ moment.include_jquery() }}
 {{ moment.include_moment() }}
+{{ moment.lang('zh-CN') }}
 {% endblock %}
 </body>
 </html>

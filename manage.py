@@ -14,6 +14,7 @@ import sys
 from app.auth import auth
 from app.home import home
 from app.bug import bug
+from app.weeklyreport import weeklyreport
 from app.auth.models import Organization
 from app.auth.models import Role
 from app.auth.models import User
@@ -31,6 +32,7 @@ FlaskCLI(app)
 app.register_blueprint(auth)
 app.register_blueprint(home)
 app.register_blueprint(bug)
+app.register_blueprint(weeklyreport)
 
 COV = None
 if app.config.get("COVERAGE"):
@@ -73,7 +75,7 @@ def deploy():
     upgrade()
     # Organization.insert_organizations()
     # Role.insert_roles()
-    # admin = User(user_name='administrator', password='666666', real_name='administrator', admin_flag = True)
+    # admin = User(user_name='administrator', password='666666', real_name='超级管理员', admin_flag = True)
     # db.session.add(admin)
     # db.session.commit()
 

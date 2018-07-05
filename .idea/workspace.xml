@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0912b0b7-2ecf-4073-be5a-4496c37fdbe7" name="Default" comment="增加对接禅道">
+    <list default="true" id="0912b0b7-2ecf-4073-be5a-4496c37fdbe7" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/common/DateUtil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/common/filter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/wangEditor/css/wangEditor.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/wangEditor/fonts/icomoon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/wangEditor/fonts/icomoon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/wangEditor/fonts/icomoon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/wangEditor/fonts/icomoon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/wangEditor/js/wangEditor.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/_weeklyreportmacros.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/weeklyreport/weeklyreport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/weeklyreport/write.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/weeklyreport/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/weeklyreport/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/weeklyreport/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/weeklyreport/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/weeklyreport/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/auth/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auth/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/common/ZentaoParser.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/common/ZentaoParser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/common/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/common/decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/custom-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/custom-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,56 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/auth/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-              <folding>
-                <element signature="e#91#177#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/templates/auth/profile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="e#434#441#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/home/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="24" column="18" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="24" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/auth/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-              <folding>
-                <element signature="e#91#122#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/auth/urls.py">
+        <entry file="file://$PROJECT_DIR$/app/weeklyreport/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="50" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="50" />
+            <state relative-caret-position="200">
+              <caret line="10" column="94" lean-forward="true" selection-start-line="10" selection-start-column="94" selection-end-line="10" selection-end-column="94" />
               <folding>
                 <element signature="e#91#119#0" expanded="true" />
               </folding>
@@ -75,29 +52,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/base.html">
+      <file leaf-file-name="weeklyreport.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/weeklyreport/weeklyreport.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="91" column="7" lean-forward="true" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
+            <state relative-caret-position="345">
+              <caret line="81" column="59" selection-start-line="81" selection-start-column="52" selection-end-line="81" selection-end-column="59" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#form#0;n#ol#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#form#0;n#ol#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#ol#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
+      <file leaf-file-name="_weeklyreportmacros.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/_weeklyreportmacros.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-813">
-              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            <state relative-caret-position="520">
+              <caret line="26" column="15" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="15" />
+              <folding>
+                <element signature="e#832#840#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/auth/models.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/weeklyreport/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="109" column="64" lean-forward="true" selection-start-line="109" selection-start-column="52" selection-end-line="109" selection-end-column="64" />
+            <state relative-caret-position="-495">
+              <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+              <folding>
+                <element signature="e#91#179#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,23 +103,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dropdown-button</find>
-      <find>navbar-side</find>
-      <find>navbar-default</find>
-      <find>#f8f8f8</find>
-      <find>less</find>
-      <find>#</find>
-      <find>\&lt;\!doctype html\&gt;\n\&lt;html\&gt;\n\&lt;head\&gt;\n    \&lt;meta charset\=\&quot;UTF\-8\&quot;\&gt;\n    \&lt;meta name\=\&quot;viewport\&quot; content\=\&quot;width\=device\-width\, initial\-scale\=1\&quot;\&gt;\n    \&lt;meta http\-equiv\=\&quot;Content\-Type\&quot; content\=\&quot;text\/html\; charset\=utf\-8\&quot;\/\&gt;\n    \&lt;title\&gt;QCM管理平台\&lt;\/title\&gt;\n    \&lt;\!\-\- css files \-\-\&gt;\n    \&lt;link href\=\&quot;static\/css\/login\.style\.css\&quot; rel\=\'stylesheet\' type\=\'text\/css\' media\=\&quot;all\&quot;\/\&gt;\n    \&lt;\!\-\- \/css files \-\-\&gt;\n\&lt;\/head\&gt;\n\&lt;body\&gt;\n\&lt;h1\&gt;QCM管理平台\&lt;\/h1\&gt;\n\&lt;div class\=\&quot;log\&quot;\&gt;\n    \&lt;div class\=\&quot;content1\&quot;\&gt;\n        \&lt;h2\&gt;登 录\&lt;\/h2\&gt;\n        \{\% for message in get_flashed_messages\(\) \%\}\n    \&lt;div class\=\&quot;alert alert\-warning\&quot;\&gt;\n        \&lt;button type\=\&quot;button\&quot; class\=\&quot;close\&quot; data\-dismiss\=\&quot;alert\&quot;\&gt;\&amp;times\;\&lt;\/button\&gt;\n        \{\{ message \}\}\n    \&lt;\/div\&gt;\n\{\% endfor \%\}\n        \&lt;form method\=\&quot;post\&quot; action\=\&quot;\/login\&quot;\&gt;\n            \&lt;input type\=\&quot;text\&quot; name\=\&quot;username\&quot; value\=\&quot;用户名\&quot; onfocus\=\&quot;this\.value \= \'\'\;\&quot;\n                   onblur\=\&quot;if \(this\.value \=\= \'\'\) \{this\.value \= \'用户名\'\;\}\&quot;\&gt;\n            \&lt;input type\=\&quot;password\&quot; name\=\&quot;password\&quot; value\=\&quot;000000\&quot; onfocus\=\&quot;this\.value \= \'\'\;\&quot;\n                   onblur\=\&quot;if \(this\.value \=\= \'\'\) \{this\.value \= \'000000\'\;\}\&quot;\&gt;\n            \&lt;div class\=\&quot;rmbm\&quot;\&gt;\n                \&lt;p style\=\&quot;color\:\#fff\;vertical\-align\:middle\;\&quot;\&gt;\n                    \&lt;input type\=\&quot;checkbox\&quot; name\=\&quot;rememberme\&quot; style\=\&quot;vertical\-align\:middle\;\&quot;\&gt;\n                    保持登录\n                \&lt;\/p\&gt;\n            \&lt;\/div\&gt;\n            \&lt;div class\=\&quot;button\-row\&quot;\&gt;\n                \&lt;input type\=\&quot;submit\&quot; class\=\&quot;sign\-in\&quot; value\=\&quot;登 录\&quot;\&gt;\n                \&lt;input type\=\&quot;reset\&quot; class\=\&quot;reset\&quot; value\=\&quot;重 置\&quot;\&gt;\n                \&lt;div class\=\&quot;clear\&quot;\&gt;\&lt;\/div\&gt;\n            \&lt;\/div\&gt;\n        \&lt;\/form\&gt;\n    \&lt;\/div\&gt;\n    \&lt;div class\=\&quot;content2\&quot;\&gt;\n        \&lt;h2\&gt;注 册\&lt;\/h2\&gt;\n        \&lt;form method\=\&quot;post\&quot; action\=\&quot;\/register\&quot;\&gt;\n            \&lt;input type\=\&quot;text\&quot; name\=\&quot;username\&quot; value\=\&quot;用户名\&quot; onfocus\=\&quot;this\.value \= \'\'\;\&quot;\n                   onblur\=\&quot;if \(this\.value \=\= \'\'\) \{this\.value \= \'用户名\'\;\}\&quot;\&gt;\n            \&lt;input type\=\&quot;name\&quot; name\=\&quot;name\&quot; value\=\&quot;姓名\&quot; onfocus\=\&quot;this\.value \= \'\'\;\&quot;\n                   onblur\=\&quot;if \(this\.value \=\= \'\'\) \{this\.value \= \'姓名\'\;\}\&quot;\&gt;\n            \&lt;input type\=\&quot;email\&quot; name\=\&quot;email\&quot; value\=\&quot;邮箱\&quot; onfocus\=\&quot;this\.value \= \'\'\;\&quot;\n                   onblur\=\&quot;if \(this\.value \=\= \'\'\) \{this\.value \= \'邮箱\'\;\}\&quot;\&gt;\n            \&lt;input type\=\&quot;password\&quot; name\=\&quot;password\&quot; value\=\&quot;000000\&quot; onfocus\=\&quot;this\.value \= \'\'\;\&quot;\n                   onblur\=\&quot;if \(this\.value \=\= \'\'\) \{this\.value \= \'000000\'\;\}\&quot;\&gt;\n            \&lt;input type\=\&quot;submit\&quot; class\=\&quot;register\&quot; value\=\&quot;注 册\&quot;\&gt;\n        \&lt;\/form\&gt;\n    \&lt;\/div\&gt;\n    \&lt;div class\=\&quot;clear\&quot;\&gt;\&lt;\/div\&gt;\n\&lt;\/div\&gt;\n\&lt;div class\=\&quot;footer navbar\-fixed\-bottom \&quot;\&gt;\n    \&lt;div class\=\&quot;container\&quot; style\=\&quot;color\:\#fff\;\&quot;\&gt;\n        Copyright \@ 2018 Aaron\. 保留所有权利\。\n    \&lt;\/div\&gt;\n\&lt;\/div\&gt;\n\&lt;\/body\&gt;\n\&lt;\/html\&gt;</find>
-      <find>Set &quot;meta.csrf&quot; instead.</find>
-      <find>__init__</find>
-      <find>input</find>
-      <find>rmbm</find>
-      <find>35%</find>
-      <find>70%</find>
-      <find>margin-left</find>
-      <find>border-radius: 4px;</find>
-      <find>border-radius:4px;</find>
-      <find>border-radius</find>
       <find>loginout</find>
       <find>username</find>
       <find>myChart</find>
@@ -144,6 +116,23 @@
       <find>StringField</find>
       <find>\# \-\*\- coding\:utf\-8 \-\*\-\n\&quot;\&quot;\&quot;\n\@author\: shenbing\n\@file\: __init__\.py\n\@time\: 2018\/6\/8 14\:30\n\&quot;\&quot;\&quot;\n\nfrom flask_wtf import FlaskForm\nfrom wtforms import StringField\, validators\, PasswordField\, SelectField\, BooleanField\n\n\nclass LoginForm\(FlaskForm\)\:\n    class Meta\:\n        csrf \= False\n\n    username \= StringField\(\'用户名\'\, \[validators\.DataRequired\(\'用户名为必填项\'\)\,\n                                   validators\.Length\(min\=4\, max\=16\, message\=\'用户名长度在4\-16位\'\)\]\,\n                           render_kw\=\{\'placeholder\'\: \'用户名\'\}\)\n    password \= PasswordField\(\'密码\'\,\n                             \[validators\.DataRequired\(\'密码为必填项\'\)\, validators\.Length\(min\=6\, max\=16\, message\=\'密码长度6\-16位\'\)\]\,\n                             render_kw\=\{\'placeholder\'\: \'密码\'\}\)\n    rememberme \= BooleanField\(\'保持登录\'\)\n\n\nclass RegisterForm\(FlaskForm\)\:\n    username \= StringField\(\'用户名\'\, \[validators\.DataRequired\(\'用户名为必填项\'\)\,\n                                   validators\.Length\(min\=4\, max\=16\, message\=\'用户名长度在4\-16位\'\)\]\,\n                           render_kw\=\{\'placeholder\'\: \'用户名\'\}\)\n    password \= PasswordField\(\'密码\'\,\n                             \[validators\.DataRequired\(\'密码为必填项\'\)\, validators\.Length\(min\=6\, max\=16\, message\=\'密码长度6\-16位\'\)\]\,\n                             render_kw\=\{\'placeholder\'\: \'密码\'\}\)\n    name \= StringField\(\'姓名\'\, \[validators\.DataRequired\(\'姓名为必填项\'\)\, validators\.Length\(min\=2\, max\=10\, message\=\'姓名长度2\-10位\'\)\]\,\n                       render_kw\=\{\'placeholder\'\: \'姓名\'\}\)\n    email \= StringField\(\'邮箱\'\, \[validators\.DataRequired\(\'邮箱为必填项\'\)\, validators\.email\(\'邮箱地址非法\'\)\]\,\n                        render_kw\=\{\'placeholder\'\: \'邮箱\'\}\)\n\nclass ProfileForm\(FlaskForm\)\:\n    username \= StringField\(\'用户名\'\, \[validators\.DataRequired\(\'用户名为必填项\'\)\,\n                                   validators\.Length\(min\=4\, max\=16\, message\=\'用户名长度在4\-16位\'\)\]\,\n                           render_kw\=\{\'placeholder\'\: \'用户名\'\}\)\n    password \= PasswordField\(\'密码\'\,\n                             \[validators\.DataRequired\(\'密码为必填项\'\)\, validators\.Length\(min\=6\, max\=16\, message\=\'密码长度6\-16位\'\)\]\,\n                             render_kw\=\{\'placeholder\'\: \'密码\'\}\)\n    name \= StringField\(\'姓名\'\, \[validators\.DataRequired\(\'姓名为必填项\'\)\, validators\.Length\(min\=2\, max\=10\, message\=\'姓名长度2\-10位\'\)\]\,\n                       render_kw\=\{\'placeholder\'\: \'姓名\'\}\)\n    email \= StringField\(\'邮箱\'\, \[validators\.DataRequired\(\'邮箱为必填项\'\)\, validators\.email\(\'邮箱地址非法\'\)\]\,\n                        render_kw\=\{\'placeholder\'\: \'邮箱\'\}\)\n    rolename \= TextField</find>
       <find>ProfileView</find>
+      <find>endpoint</find>
+      <find>def filter(</find>
+      <find>def filter</find>
+      <find>jinja2.exceptions.UndefinedError</find>
+      <find>weeklyreport</find>
+      <find>%&gt;</find>
+      <find>pagination</find>
+      <find>\{\% extends \&quot;base\.html\&quot; \%\}\n\{\% import \&quot;_macros\.html\&quot; as macros \%\}\n\{\% block content \%\}\n\&lt;div id\=\&quot;page\-wrapper\&quot;\&gt;\n    \&lt;div class\=\&quot;header\&quot;\&gt;\n        \&lt;h1 class\=\&quot;page\-header\&quot;\&gt;周报列表\&lt;\/h1\&gt;\n        \&lt;ol class\=\&quot;breadcrumb\&quot;\&gt;\n            \&lt;li\&gt;\&lt;a href\=\&quot;\#\&quot;\&gt;周报管理\&lt;\/a\&gt;\&lt;\/li\&gt;\n            \&lt;li class\=\&quot;active\&quot;\&gt;周报列表\&lt;\/li\&gt;\n        \&lt;\/ol\&gt;\n    \&lt;\/div\&gt;\n    \{\% for weeklyreport in pagination\.items \%\}\n    \&lt;div class\=\&quot;row\&quot;\&gt;\n        \&lt;div class\=\&quot;col\-md\-12\&quot;\&gt;\n            \&lt;div class\=\&quot;card\&quot;\&gt;\n                \&lt;div class\=\&quot;card\-action\&quot;\&gt;\n                    \&lt;a rel\=\&quot;tag\&quot; class\=\&quot;post\-tag\&quot;\&gt;姓名\:\{\{ weeklyreport\.user\.real_name \}\}\&lt;\/a\&gt;\n                    \&lt;a rel\=\&quot;tag\&quot; class\=\&quot;post\-tag\&quot;\&gt;周次\:\{\{ weeklyreport\.week_count \}\}\&lt;\/a\&gt;\n                    \&lt;a rel\=\&quot;tag\&quot; class\=\&quot;post\-tag\&quot;\&gt;年份\:\{\{ weeklyreport\.year \}\}\&lt;\/a\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;card\-content\&quot;\&gt;\n                    \&lt;p\&gt;\{\{ weeklyreport\.content\|string\|safe \}\}\&lt;\/p\&gt;\n                    \&lt;a href\=\&quot;\{\{url_for\(\'weeklyreport\.weeklyreportwrite\'\)\}\}\&quot; rel\=\&quot;tag\&quot;\n                           class\=\&quot;waves\-effect waves\-light btn\&quot; style\=\&quot;float\:right\&quot;\&gt;编辑\&lt;\/a\&gt;\n                    \&lt;div class\=\&quot;clearBoth\&quot;\&gt;\&lt;br\/\&gt;\n                    \&lt;\/div\&gt;\n                \&lt;\/div\&gt;\n            \&lt;\/div\&gt;\n        \&lt;\/div\&gt;\n    \&lt;\/div\&gt;\n    \{\% endfor \%\}\n    \{\% if pagination and pagination\.has_next \%\}\n    \&lt;div class\=\&quot;pagination\&quot;\&gt;\n        \{\{ macros\.pagination_widget\(pagination\, \'weeklyreports\'\) \}\}\n    \&lt;\/div\&gt;\n    \{\% endif \%\}\n    \{\% endblock \%\}\n\&lt;\/div\&gt;\n\n\{\% block scripts \%\}\n\{\{ super\(\) \}\}\n\&lt;script type\=\'text\/javascript\'\&gt;\n    \$\(document\)\.ready\(function\(\)\{\n        \$\(\'\#main\-menu li a\'\)\.each\(function\(\)\{\n            if\(\$\(this\)\.attr\(\&quot;href\&quot;\) \=\= String\(window\.location\[\'pathname\'\]\)\)\n                \$\(this\)\.addClass\(\'active\-menu\'\)\;\n        \}\)\;\n    \}\)\n\n\n\n\n\n\&lt;\/script\&gt;\n\{\% endblock \%\}</find>
+      <find>f0c99f545095</find>
+      <find>name</find>
+      <find>cen</find>
+      <find>page</find>
+      <find>wangEditor</find>
+      <find>message</find>
+      <find>author_id</find>
+      <find>fragment</find>
+      <find>url</find>
     </findStrings>
     <replaceStrings>
       <replace>Integer</replace>
@@ -157,6 +146,8 @@
       <replace>80%</replace>
       <replace>border-radius:18px;</replace>
       <replace>logout</replace>
+      <replace>%}</replace>
+      <replace>user_id</replace>
     </replaceStrings>
   </component>
   <component name="FindManager">
@@ -176,32 +167,45 @@
         <option value="$PROJECT_DIR$/app/auth/__init__.py" />
         <option value="$PROJECT_DIR$/app/static/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/app/static/css/qcm.css" />
-        <option value="$PROJECT_DIR$/app/auth/models.py" />
         <option value="$PROJECT_DIR$/app/templates/base.html.back" />
-        <option value="$PROJECT_DIR$/app/common/decorators.py" />
-        <option value="$PROJECT_DIR$/app/static/css/custom-styles.css" />
         <option value="$PROJECT_DIR$/app/templates/home/index.html" />
-        <option value="$PROJECT_DIR$/app/__init__.py" />
         <option value="$PROJECT_DIR$/app/home/__init__.py" />
         <option value="$PROJECT_DIR$/app/home/urls.py" />
         <option value="$PROJECT_DIR$/app/home/views.py" />
         <option value="$PROJECT_DIR$/app/static/css/login.style.css" />
         <option value="$PROJECT_DIR$/app/templates/auth/login.html" />
         <option value="$PROJECT_DIR$/app/bug/__init__.py" />
-        <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/app/templates/bug/info.html" />
         <option value="$PROJECT_DIR$/app/bug/urls.py" />
-        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/app/templates/bug/bugsPerDay.html" />
         <option value="$PROJECT_DIR$/app/templates/bug/bugsStatus.html" />
-        <option value="$PROJECT_DIR$/app/common/ZentaoParser.py" />
         <option value="$PROJECT_DIR$/app/bug/views.py" />
         <option value="$PROJECT_DIR$/app/auth/urls.py" />
         <option value="$PROJECT_DIR$/app/templates/404.html" />
         <option value="$PROJECT_DIR$/app/auth/forms.py" />
-        <option value="$PROJECT_DIR$/app/templates/base.html" />
         <option value="$PROJECT_DIR$/app/auth/views.py" />
         <option value="$PROJECT_DIR$/app/templates/auth/profile.html" />
+        <option value="$PROJECT_DIR$/app/common/ZentaoParser.py" />
+        <option value="$PROJECT_DIR$/../LearningPython/faceai/ApiUtil.py" />
+        <option value="$PROJECT_DIR$/app/weeklyreport/__init__.py" />
+        <option value="$PROJECT_DIR$/app/common/decorators.py" />
+        <option value="$PROJECT_DIR$/app/common/DateUtil.py" />
+        <option value="$PROJECT_DIR$/app/common/filter.py" />
+        <option value="$PROJECT_DIR$/app/__init__.py" />
+        <option value="$PROJECT_DIR$/app/weeklyreport/models.py" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/app/static/css/main.css" />
+        <option value="$PROJECT_DIR$/app/static/css/custom-styles.css" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/app/weeklyreport/urls.py" />
+        <option value="$PROJECT_DIR$/app/templates/base.html" />
+        <option value="$PROJECT_DIR$/app/templates/weeklyreport/write.html" />
+        <option value="$PROJECT_DIR$/app/auth/models.py" />
+        <option value="$PROJECT_DIR$/app/weeklyreport/forms.py" />
+        <option value="$PROJECT_DIR$/app/templates/_macros.html" />
+        <option value="$PROJECT_DIR$/app/templates/_weeklyreportmacros.html" />
+        <option value="$PROJECT_DIR$/app/templates/weeklyreport/weeklyreport.html" />
+        <option value="$PROJECT_DIR$/app/weeklyreport/views.py" />
       </list>
     </option>
   </component>
@@ -236,7 +240,7 @@
               <item name="QCM" type="b2602c69:ProjectViewProjectNode" />
               <item name="QCM" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="QCM" type="b2602c69:ProjectViewProjectNode" />
@@ -260,17 +264,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\codespace\python\QCM\app\templates\auth" />
-      <recent name="D:\codespace\python\QCM\app\templates\bug" />
-      <recent name="D:\codespace\python\QCM\app\common" />
-      <recent name="D:\codespace\python\QCM\app\bug" />
-      <recent name="D:\codespace\python\QCM\app\static\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\codespace\python\QCM\app\static" />
       <recent name="D:\codespace\python\QCM\app\static\img" />
       <recent name="D:\codespace\python\QCM\app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\codespace\python\QCM\app\templates" />
+      <recent name="D:\codespace\python\QCM\app\static" />
+      <recent name="D:\codespace\python\QCM\app\weeklyreport" />
+      <recent name="D:\codespace\python\QCM\app\static\wangEditor\js" />
+      <recent name="D:\codespace\python\QCM\app\static\wangEditor\fonts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -286,6 +290,42 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.manage">
+    <configuration name="ApiUtil" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="QCM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../LearningPython/faceai" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../LearningPython/faceai/ApiUtil.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="DateUtil" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="QCM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/common/DateUtil.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="ZentaoParser" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="QCM" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -340,42 +380,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="one2one" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="QCM" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../LearningPython/sqlorm" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../LearningPython/sqlorm/one2one.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="QCM" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/home" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/home/views.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
       <option name="cucumberJsArguments" />
       <option name="executablePath" />
@@ -419,17 +423,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.manage" />
-      <item itemvalue="Python.one2one" />
-      <item itemvalue="Python.views" />
       <item itemvalue="Python.__init__" />
       <item itemvalue="Python.ZentaoParser" />
+      <item itemvalue="Python.ApiUtil" />
+      <item itemvalue="Python.DateUtil" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.manage" />
+        <item itemvalue="Python.DateUtil" />
+        <item itemvalue="Python.ApiUtil" />
         <item itemvalue="Python.ZentaoParser" />
         <item itemvalue="Python.__init__" />
-        <item itemvalue="Python.one2one" />
       </list>
     </recent_temporary>
   </component>
@@ -500,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530255611738</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="增加对接禅道">
+      <created>1530256756977</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1530256756977</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -514,20 +526,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.141258" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12697576" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32967034" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5010661" side_tool="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32637364" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31648353" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4989339" weight="0.32967034" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32967034" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.2747253" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32087913" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.32087913" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -537,6 +549,16 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -590,7 +612,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="41" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -603,319 +625,32 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/static/css/custom-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/auth/login.back.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="11" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/_macros.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/globals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/routing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="602" selection-start-line="602" selection-end-line="602" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python36/Lib/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="863" selection-start-line="863" selection-end-line="863" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python36/Lib/socketserver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="642" selection-start-line="642" selection-end-line="642" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/serving.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="300" selection-start-line="300" selection-end-line="300" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/debug/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-64">
-          <caret line="297" column="45" selection-start-line="297" selection-start-column="45" selection-end-line="297" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python36/Lib/_weakrefset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python36/Lib/http/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="418" selection-start-line="418" selection-end-line="418" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="385" column="4" selection-start-line="385" selection-start-column="4" selection-end-line="385" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/wtforms/form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="298" column="8" selection-start-line="298" selection-start-column="8" selection-end-line="298" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask_wtf/form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="100" column="54" lean-forward="true" selection-start-line="100" selection-start-column="54" selection-end-line="100" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/wtforms/validators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="547" selection-start-line="547" selection-end-line="547" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/css/login.style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/js/echarts-all.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="343" column="21" selection-start-line="343" selection-start-column="13" selection-end-line="343" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/home/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        <state relative-caret-position="240">
+          <caret line="12" lean-forward="true" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/css/main.css">
+    <entry file="file://$PROJECT_DIR$/app/home/models.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/css/qcm.css">
+    <entry file="file://$PROJECT_DIR$/app/common/DateUtil.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5420">
-          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/bs4/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="125" column="31" selection-start-line="125" selection-start-column="27" selection-end-line="125" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/ZentaoParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="68" column="36" lean-forward="true" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+        <state relative-caret-position="429">
+          <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
           <folding>
             <element signature="e#95#124#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/bug/bugsPerDay.html">
+    <entry file="file://$PROJECT_DIR$/app/common/ZentaoParser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state>
+          <caret selection-end-line="5" selection-end-column="3" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/_compat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/-863245017/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="5445" column="6" selection-start-line="5445" selection-start-column="6" selection-end-line="5445" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bug/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-          <folding>
-            <element signature="e#91#114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bug/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-          <folding>
-            <element signature="e#91#118#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bug/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/wtforms/fields/simple.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="54" column="29" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/wtforms/fields/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="518" column="6" selection-start-line="518" selection-start-column="6" selection-end-line="518" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/templating.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="121" column="19" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/bug/bugsStatus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/home/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="1812" selection-start-line="1812" selection-end-line="1812" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/home/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="18" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/auth/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="22" column="16" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="22" selection-end-column="16" />
-          <folding>
-            <element signature="e#824#831#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/home/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-          <folding>
-            <element signature="e#91#119#0" expanded="true" />
+            <element signature="e#95#124#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -930,60 +665,348 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask_login/utils.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/query.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1036">
-          <caret line="260" selection-start-line="260" selection-end-line="260" />
+        <state relative-caret-position="439">
+          <caret line="1618" column="28" selection-start-line="1618" selection-start-column="28" selection-end-line="1618" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/auth/forms.py">
+    <entry file="file://$PROJECT_DIR$/app/bug/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="200">
+          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
           <folding>
-            <element signature="e#91#122#0" expanded="true" />
+            <element signature="e#91#118#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/app/common/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/home/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="91" column="7" lean-forward="true" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
+        <state relative-caret-position="780">
+          <caret line="39" column="10" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="39" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/attributes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="241" selection-start-line="241" selection-end-line="241" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/local.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="346" selection-start-line="346" selection-end-line="346" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/templating.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bug/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+          <folding>
+            <element signature="e#91#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bug/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/bug/bugsStatus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/weeklyreport/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="12" selection-start-line="9" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/alembic.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/script.py.mako">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/versions/af553fa94b1f_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="37" column="69" lean-forward="true" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="57" column="42" lean-forward="true" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+          <folding>
+            <element signature="e#91#126#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-813">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="411">
+          <caret line="77" column="81" selection-start-line="77" selection-start-column="76" selection-end-line="77" selection-end-column="81" />
+          <folding>
+            <element signature="e#91#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/bug/bugsPerDay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="15" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="719" column="19" selection-start-line="719" selection-start-column="16" selection-end-line="719" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/login.style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/custom-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="763" lean-forward="true" selection-start-line="763" selection-end-line="763" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/1wangEditor1/css/wangEditor.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/1wangEditor1/js/wangEditor.min.js.map">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask_login/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="260" selection-start-line="260" selection-end-line="260" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/materialize/js/materialize.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/1wangEditor1/js/wangEditor.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1680" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/wangEditor/js/wangEditor.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/auth/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="10" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="92" column="7" selection-start-line="92" selection-start-column="7" selection-end-line="92" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/auth/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="109" column="64" lean-forward="true" selection-start-line="109" selection-start-column="52" selection-end-line="109" selection-end-column="64" />
+        <state relative-caret-position="287">
+          <caret line="153" column="29" selection-start-line="153" selection-start-column="29" selection-end-line="153" selection-end-column="29" />
+          <folding>
+            <element signature="e#91#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/wtforms/fields/simple.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/auth/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        <state relative-caret-position="240">
+          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="46" />
           <folding>
             <element signature="e#91#177#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/auth/profile.html">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask_sqlalchemy/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="168">
+          <caret line="325" column="13" selection-start-line="325" selection-start-column="8" selection-end-line="325" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/weeklyreport/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
           <folding>
-            <element signature="e#434#441#1" expanded="true" />
+            <element signature="e#91#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/weeklyreport/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="94" lean-forward="true" selection-start-line="10" selection-start-column="94" selection-end-line="10" selection-end-column="94" />
+          <folding>
+            <element signature="e#91#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/weeklyreport/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="e#91#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/_macros.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="215" column="20" selection-start-line="215" selection-start-column="12" selection-end-line="215" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/weeklyreport/write.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300">
+          <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
+          <folding>
+            <element signature="n#style#0;n#hr#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/_weeklyreportmacros.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="15" />
+          <folding>
+            <element signature="e#832#840#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/weeklyreport/weeklyreport.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="81" column="59" selection-start-line="81" selection-start-column="52" selection-end-line="81" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#form#0;n#ol#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#form#0;n#ol#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#ol#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/weeklyreport/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-495">
+          <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+          <folding>
+            <element signature="e#91#179#0" expanded="true" />
           </folding>
         </state>
       </provider>

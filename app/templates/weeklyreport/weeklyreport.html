@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% import "_weeklyreportmacros.html" as macros %}
+{% block content %}
+<div id="page-wrapper">
+    <div class="header">
+        <h1 class="page-header">周报列表</h1>
+        <ol class="breadcrumb">
+            <li><a href="{{url_for('weeklyreport.weeklyreports')}}">周报管理</a></li>
+            <li class="active">周报列表</li>
+        </ol>
+    </div>
+    <div>
+        <ol class="breadcrumb">
+            <form id="search" role="form" action="{{url_for('weeklyreport.weeklyreports')}}">
+                <div class="search-area form-group">
+                    <div class="active"><span style="color:#777;">用户名:</span></div>
+                    <div><select name="user_id" id="userselect" class="form-control search">
+                        <option value="all">请选择</option>
+                        {% for user in users %}
+                        <option value="{{ user.id }}">{{ user.real_name }}</option>
+                        {% endfor %}
+                    </select>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-default" style="vertical-align:middle;margin-top:-6px;">
+                            搜索
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="col-md-12">
+                <a href="{{url_for('weeklyreport.weeklyreportwrite')}}" rel="tag"
+                   class="waves-effect waves-light btn" style="float:right"><i class="fa fa-pencil"
+                                                                               aria-hidden="true"></i>写周报</a>
+            </div>
+        </ol>
+    </div>
+    {% for weeklyreport in pagination.items %}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-action">
+                    <a rel="tag" class="weeklyreport-tag" style="color:#ffffff">姓名:{{ weeklyreport.user.real_name }}</a>
+                    <a rel="tag" class="weeklyreport-tag" style="color:#ffffff">周次:{{ weeklyreport.week_count }}</a>
+                    <a rel="tag" class="weeklyreport-tag" style="color:#ffffff">年份:{{ weeklyreport.year }}</a>
+                </div>
+                <div class="card-content">
+                    <p>{{ weeklyreport.content|safe }}</p>
+                    {% if current_user == weeklyreport.user %}
+                    <a href="{{url_for('weeklyreport.weeklyreportwrite')}}" rel="tag"
+                       class="waves-effect waves-light btn" style="float:right">编辑</a>
+                    {% endif %}
+                    <div class="clearBoth"><br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    {% if pagination.pages > 1 %}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="pagination" style="float:right">
+                {{ macros.pagination_widget(pagination, 'weeklyreport.weeklyreports', user_id) }}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script type='text/javascript'>
+    $(document).ready(function(){
+        $('#main-menu li a').each(function(){
+            if($(this).attr("href") == String(window.location['pathname']))
+                $(this).addClass('active-menu');
+        });
+    })
+    {% if user_id %}
+    document.getElementById('userselect').value="{{ user_id }}";
+    {% endif %}
+
+
+</script>
+{% endblock %}

@@ -743,3 +743,21 @@ padding: 0 15px 0px 15px;
 			padding:17px 9px;
 		}
  }
+
+/*# define */
+.weeklyreport-tag {
+  display: inline-block;
+  padding: 0.4rem 0.4rem;
+  font-size: 1rem;
+  line-height: 0.9;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+  background-color: #26a69a;
+  border: 1.5px solid #26a69a;
+}
+#search .search-area > div {
+  display: inline-block;
+}
