@@ -61,7 +61,7 @@
                 <div class="card-content">
                     <p>{{ weeklyreport.content|safe }}</p>
                     {% if current_user == weeklyreport.user %}
-                    <a href="{{url_for('weeklyreport.weeklyreportwrite')}}" rel="tag"
+                    <a href="{{ url_for('weeklyreport.weeklyreportwrite')}}?weeklyreportid={{ weeklyreport.id }}" rel="tag"
                        class="waves-effect waves-light btn" style="float:right">编辑</a>
                     {% endif %}
                     <div class="clearBoth"><br/>
@@ -95,5 +95,6 @@
     {% if user_id %}
     document.getElementById('userselect').value="{{ user_id }}";
     {% endif %}
+
 </script>
 {% endblock %}

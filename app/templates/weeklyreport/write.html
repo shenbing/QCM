@@ -27,7 +27,7 @@
                     <h3>第{{ week_count }}周({{start_at}}至{{end_at}})工作周报</h3>
                 </div>
                 <div class="card-content" id="test">
-                    <form class="form form-inline" method="post" role="form">
+                    <form class="form form-inline" method="post" role="form" >
                         {{ wtf.form_errors(form, hiddens="only") }}
                         {{ form.body(class='wangEditor') }}
                         <hr style="height:10pt; visibility:hidden;"/>

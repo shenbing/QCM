@@ -6,7 +6,7 @@
 """
 
 from flask_wtf import FlaskForm
-from wtforms import TextAreaField, validators, PasswordField, SelectField, BooleanField, SubmitField
+from wtforms import TextAreaField, validators, PasswordField, SelectField, BooleanField, SubmitField, StringField
 from wtforms.validators import DataRequired
 
 
