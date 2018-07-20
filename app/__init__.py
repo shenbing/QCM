@@ -33,7 +33,6 @@ login_manager.session_protection = "strong"
 login_manager.login_message = "请登录QCM管理平台！"
 moment = Moment()
 
-
 def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)

@@ -53,14 +53,7 @@
 <script type="text/javascript" src="{{ url_for('static', filename='wangEditor/js/wangEditor.min.js') }}"></script>
 <script type="text/javascript">
     var div = document.getElementById('body');
-    var textarea = document.getElementById('body');
     var editor = new wangEditor(div);
-    <!--editor.customConfig.menus = ['head','bold','fontSize','fontName','italic','underline','strikeThrough','foreColor','backColor','link','list','justify','quote','emoticon','table','code','undo','redo'];-->
-    <!--editor.customConfig.onchange = function (html) {-->
-            <!--textarea.val(html)-->
-        <!--}-->
     editor.create();
-    <!--textarea.val(editor.txt.html())-->
-
 </script>
 {% endblock %}

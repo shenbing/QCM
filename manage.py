@@ -11,6 +11,8 @@ from flask_migrate import upgrade, init, migrate as dbmigrate
 import click
 import os
 import sys
+import threading
+from app.common import threads_function
 from app.auth import auth
 from app.home import home
 from app.bug import bug
@@ -80,4 +82,7 @@ def deploy():
     # db.session.commit()
 
 if __name__ == "__main__":
+    t_zentao_info = threading.Thread(target=threads_function.get_zentao_bug_info)
+    t_zentao_info.setDaemon(True)
+    t_zentao_info.start()
     app.run(host="0.0.0.0", debug=True)
